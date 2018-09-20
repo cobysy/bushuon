@@ -6,7 +6,10 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "test:unit": "vue-cli-service test:unit"
+    "test:unit": "vue-cli-service test:unit",
+    "build:electron": "vue-cli-service build:electron",
+    "serve:electron": "vue-cli-service serve:electron",
+    "postinstall": "electron-builder install-app-deps"
   },
   "dependencies": {
     "vue": "^2.5.17",
@@ -23,9 +26,12 @@
     "@vue/cli-service": "^3.0.1",
     "@vue/test-utils": "^1.0.0-beta.20",
     "chai": "^4.1.2",
+    "electron": "^2.0.2",
     "node-sass": "^4.9.0",
     "sass-loader": "^7.0.1",
     "typescript": "^3.0.0",
+    "vue-cli-plugin-electron-builder": "^1.0.0-rc.3",
     "vue-template-compiler": "^2.5.17"
-  }
+  },
+  "main": "dist_electron/bundled/background.js"
 }
