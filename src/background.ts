@@ -10,6 +10,7 @@ import {
 const isDevelopment = process.env.NODE_ENV !== 'production';
 if (isDevelopment) {
   // Don't load any native (external) modules until the following line is run:
+  // tslint:disable-next-line:no-var-requires
   require('module').globalPaths.push(process.env.NODE_MODULES_PATH);
 }
 
