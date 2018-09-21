@@ -31,7 +31,7 @@ Vue CLI v3.0.1
 $ # install Vue CLI 3 plugin for Electron
 $ vue add electron-builder
 
-$ cd kanjiken
+$ cd bushuon
 
 $ # launch Electron for the first time
 $ yarn serve:electron
