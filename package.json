@@ -9,7 +9,9 @@
     "test:unit": "vue-cli-service test:unit",
     "build:electron": "vue-cli-service build:electron",
     "serve:electron": "vue-cli-service serve:electron",
-    "postinstall": "electron-builder install-app-deps"
+    "postinstall": "electron-builder install-app-deps",
+    "parse:jyouyou": "ts-node -O '{\"module\": \"commonjs\"}' data_tools/parse_jyouyou.ts",
+    "parse:kanjidic2": "ts-node -O '{\"module\": \"commonjs\"}' data_tools/parse_kanjidic2.ts"
   },
   "dependencies": {
     "vue": "^2.5.17",
@@ -20,6 +22,7 @@
   "devDependencies": {
     "@types/chai": "^4.1.0",
     "@types/mocha": "^5.2.4",
+    "@types/xml2js": "^0.4.3",
     "@vue/cli-plugin-babel": "^3.0.1",
     "@vue/cli-plugin-typescript": "^3.0.1",
     "@vue/cli-plugin-unit-mocha": "^3.0.1",
@@ -29,9 +32,12 @@
     "electron": "^2.0.2",
     "node-sass": "^4.9.0",
     "sass-loader": "^7.0.1",
+    "sax": "^1.2.4",
+    "ts-node": "^7.0.1",
     "typescript": "^3.0.0",
     "vue-cli-plugin-electron-builder": "^1.0.0-rc.3",
-    "vue-template-compiler": "^2.5.17"
+    "vue-template-compiler": "^2.5.17",
+    "xml2js": "^0.4.19"
   },
   "main": "dist_electron/bundled/background.js"
 }
