@@ -1,4 +1,7 @@
-# kanjiken
+# bushuon
+
+漢字に含まれる部首を検索ボックスに入力することで候補の常用漢字が一覧で表示されます。
+Search for jōyō kanji by their bushu/radical components.
 
 ## Step by step:
 
@@ -11,7 +14,7 @@ $ # install Vue CLI 3
 $ npm install -g @vue/cli
 
 $ # Setup the new Vue project
-$ vue create kanjiken
+$ vue create bushuon
 
 Vue CLI v3.0.1
 ? Please pick a preset: Manually select features
