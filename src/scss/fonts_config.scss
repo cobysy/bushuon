@@ -1,0 +1,11 @@
+/* fonts_config.scss */
+
+$font_path: '../assets/fonts/';
+
+ @font-face {
+  font-family: 'japanese_radicals';
+  src: url($font_path + 'JapaneseRadicals-Regular.woff2') format('woff2'),
+  url($font_path + 'JapaneseRadicals-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
